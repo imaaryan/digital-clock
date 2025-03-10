@@ -1,0 +1,60 @@
+:root {
+  color-scheme: light dark;
+
+  --light-main-bg-color: #fbfbfbf1;
+  --light-bg-color: #000000f1;
+  --light-color: #fbfbfbf1;
+
+  --dark-main-bg-color: #000000f1;
+  --dark-bg-color: #fbfbfbf1;
+  --dark-color: #000000f1;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: light-dark(
+    var(--light-main-bg-color),
+    var(--dark-main-bg-color)
+  );
+  color: light-dark(var(--dark-color), var(--light-color));
+}
+.main-container {
+  text-align: center;
+  border-radius: 20px;
+}
+#time {
+  font-size: 250px;
+  font-weight: 800;
+}
+#date {
+  font-size: 80px;
+  font-weight: 500;
+}
+
+.dark {
+  color-scheme: dark;
+}
+
+.light {
+  color-scheme: light;
+}
+
+.themeToggle {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+}
+
+.ri-lightbulb-line {
+  font-size: 30px;
+  color: light-dark(var(--dark-color), var(--light-color));
+}
