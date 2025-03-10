@@ -1,0 +1,12 @@
+{
+  "name": "Digital Clock",
+  "description": "New Tab Clock Extension",
+  "version": "1.0",
+  "manifest_version": 3,
+  "chrome_url_overrides": {
+    "newtab": "index.html"
+  },
+  "icons": {
+    "128": "assets/clock.png"
+  }
+}
